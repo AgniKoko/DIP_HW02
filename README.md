@@ -4,13 +4,13 @@
 
 
 ## Description
-This repository hosts the Python implementation for the **second** laboratory assignment of the *Digital Image Processing* course.  
+This repository hosts the Python implementation for the **second** laboratory assignment of the Digital Image Processing course.  
 The goal is to build a **JPEG-style compressor** for a colour image of your choice:
 
 1. **8 × 8 Block DCT & Quantisation** (per Y, Cb, Cr channel).  
 2. **DC coefficient coding**  
    * Predict each block’s DC value from its causal neighbours.  
-   * Test three predictors — **Left**, **Upper**, **Average(Left, Upper)** — and **select the one with the lowest residual entropy**.  
+   * Test three predictors "**Left**, **Upper**, **Average(Left, Upper)**" and **select the one with the lowest residual entropy**.  
    * Huffman-encode the chosen residuals.
 3. **AC coefficient coding**  
    * Zig-zag scan each block.  
@@ -81,7 +81,8 @@ The assignment consists of the following steps, implemented sequentially in the 
    - Compute
 
    $$
-     \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}}%
+     \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}}
+   %
                     {\text{Encoded bit-stream + tables (bytes)}}
    $$
 
@@ -94,5 +95,5 @@ Open **DIP_HW02.ipynb** or **DIP_HW02_uv_mapping.ipynb** and execute all cells i
 
 ## Notes
 
-This assignment is part of the *Digital Image Processing* course at **Democritus University of Thrace (DUTH)**.
+This assignment is part of the "Digital Image Processing" course at **Democritus University of Thrace (DUTH)**.
 The original task description is the intellectual property of the course instructor and is reproduced here strictly for educational purposes.
