@@ -77,9 +77,9 @@ The assignment consists of the following steps, implemented sequentially in the 
 
 8. **Compression-ratio Report**
    - Compute
-      $$
-      \frac{\text{Uncompressed size (bytes)}{\text{Encoded bit-stream + tables (bytes)}}
-      $$
+   $$
+   \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}{\text{Encoded bit-stream + tables (bytes)}}
+   $$
    - Print the result and, if multiple quality factors were tested, save a *rate–distortion* plot.
 
 ## Running the Notebook
