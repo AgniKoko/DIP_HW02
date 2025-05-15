@@ -1,5 +1,8 @@
 # Digital Image Processing — 2nd Course Assignment  
 
+![image](https://github.com/user-attachments/assets/9e1577f7-af71-44ef-be52-3ba219421a2f)
+
+
 ## Description
 This repository hosts the Python implementation for the **second** laboratory assignment of the *Digital Image Processing* course.  
 The goal is to build a **JPEG-style compressor** for a colour image of your choice:
@@ -15,10 +18,6 @@ The goal is to build a **JPEG-style compressor** for a colour image of your choi
 4. **Bit-budget accounting**  
    * Add up the encoded stream **plus** the Huffman tables themselves.  
    * Report the **overall compression ratio** against the raw 24-bit RGB image.
-
-
-![image](https://github.com/user-attachments/assets/9e1577f7-af71-44ef-be52-3ba219421a2f)
-
 
 ## Contents
 
