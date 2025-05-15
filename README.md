@@ -41,11 +41,11 @@ The goal is to build a **JPEG-style compressor** for a colour image of your choi
 The assignment consists of the following steps, implemented sequentially in the Jupyter Notebook:
 
 1. **Image I/O & Pre-processing**
-   - Load `data/lena_color.png` (or any RGB image).
+   - Load `data/lena.png` (or any RGB image).
    - Verify dimensions are divisible by 8; otherwise, pad symmetrically.
 
 2. **Forward DCT (8 × 8)**
-   - Convert RGB → YCbCr (ITU-R BT.601).
+   - Convert RGB το YCbCr (ITU-R BT.601).
    - Apply 2D DCT to each channel, block-wise.
 
 3. **Quantisation**
@@ -69,7 +69,6 @@ The assignment consists of the following steps, implemented sequentially in the 
      3. Huffman AC table
      4. Encoded DC residuals
      5. Encoded AC data
-   - Save to `output/encoded.bin`.
 
 7. **Decoding & Verification**
    - Decode bit-stream, reconstruct YCbCr blocks.
@@ -77,15 +76,12 @@ The assignment consists of the following steps, implemented sequentially in the 
 
 8. **Compression-ratio Report**
    - Compute
-     $$
-       \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}}%
-                      {\text{Encoded bit-stream + tables (bytes)}}
-     $$
-   $$
-   \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}{\text{Encoded bit-stream + tables (bytes)}}
-   $$
-   - Print the result and, if multiple quality factors were tested, save a *rate–distortion* plot.
 
+     $$
+       \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}}{\text{Encoded bit-stream + tables (bytes)}}
+     $$
+   - Print the result and, if multiple quality factors were tested, save a *rate–distortion* plot.
+     
 ## Running the Notebook
 Open **DIP_HW02.ipynb** or **DIP_HW02_uv_mapping.ipynb** and execute all cells in sequence.
 
