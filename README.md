@@ -77,6 +77,10 @@ The assignment consists of the following steps, implemented sequentially in the 
 
 8. **Compression-ratio Report**
    - Compute
+     $$
+       \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}}%
+                      {\text{Encoded bit-stream + tables (bytes)}}
+     $$
    $$
    \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}{\text{Encoded bit-stream + tables (bytes)}}
    $$
