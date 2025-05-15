@@ -74,18 +74,12 @@ The assignment consists of the following steps, implemented sequentially in the 
 7. **Decoding & Verification**
    - Decode bit-stream, reconstruct YCbCr blocks.
    - Apply inverse quantisation and inverse DCT.
-   - Convert back to RGB.
-   - Compute **PSNR** and **SSIM** against the original image.
 
 8. **Compression-ratio Report**
    - Compute
-
-   $$
-     \mathrm{CR} = \frac{\text{Uncompressed size (bytes)}}
-   %
-                    {\text{Encoded bit-stream + tables (bytes)}}
-   $$
-
+      $$
+      \frac{\text{Uncompressed size (bytes)}{\text{Encoded bit-stream + tables (bytes)}}
+      $$
    - Print the result and, if multiple quality factors were tested, save a *rate–distortion* plot.
 
 ## Running the Notebook
